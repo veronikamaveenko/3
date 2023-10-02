@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <title>Запись на аттестацию</title>
+  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+	<div class="logo"><a href="example.html">
+				<img src="images/logo.png" alt="Логотип" width="71" height="69">
+			</a></div>
+		<nav>
+			<ul>
+				<li><a href="index.html">
+				О себе
+				</a></li>
+				<li><a href="info.html">
+				Резюме
+				</a></li>
+				<li><a href="appointment.html">
+				Запись на аттестацию
+				</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+	<form action="process.php" method="post">
+		<div class="applointment"><h1>Запись на аттестацию</h1>
+		<div class="log-in">
+			<h2>Введите данные</h2>
+			<div class="name-and-log">
+			<div class="name">
+				<div>
+				<label for="name">Введите ID</label><br>
+				<input type="text" name="user_id" id="user_id">
+				</div>
+				<div>
+				<label for="name">Введите имя</label><br>
+				<input type="text" name="name" id="name" />
+				</div>
+			</div>
+			</div>
+		</div>
+		<div class="course">
+			<h2>Выберите предмет</h2>
+			<select name="subject" id="crs" title="Выберите предмет">
+			<option>Выберите предмет</option>
+			<option value="Математике">Математика</option>
+			<option value="Английскому языку">Английский язык</option>
+			<option value="Физике">Физика</option>
+			</select>
+		</div>
+		<div class="chose-time">
+			<h2>Выберите время</h2>
+			<label for="time-1">
+			<input type="radio" name="time" id="time-1" value="9:00 - 10:00" checked> 9:00 - 10:00 </label><br>
+			<label for="time-2">
+			<input type="radio" name="time" id="time-2" value="10:00 - 11:00"> 10:00 - 11:00 </label><br>
+			<label for="time-3">
+			<input type="radio" name="time" id="time-3" value="11:00 - 12:00"> 11:00 - 12:00 </label><br>
+			<label for="time-4">
+			<input type="radio" name="time" id="time-4" value="12:00 - 13:00"> 12:00 - 13:00 </label><br>
+		</div>
+		<div class="chose-control">
+			<h2>Выберите форму контроля</h2>
+			<label for="ctrl-1">
+			<input type="radio" name="ctrl" id="ctrl-1" value="теста" checked> Тест</label><br>
+			<label for="ctrl-2">
+			<input type="radio" name="ctrl" id="ctrl-2" value="собеседования"> Собеседование</label><br>
+			<label for="ctrl-3">
+			<input type="radio" name="ctrl" id="ctrl-3" value="доклада"> Доклад</label><br>
+			<label for="ctrl-4">
+			<input type="radio" name="ctrl" id="ctrl-4" value="контрольной работы"> Контрольная работа</label><br>
+		</div>
+		<div class="course">
+			<h2>Введите дополнительную информацию</h2>
+			<textarea cols="20" name="comment"></textarea>
+		</div>
+		<form action="process.php" method="post" id="select-button">
+			<input type="submit" id="button" value="Отправить">
+		</form></form></div>
+	</main>
+	<footer>
+		<div class="icons">
+		<a href="https://vk.com/">
+			<img src="images/vk.svg" alt="vk" width="48" height="48">
+		</a>
+		<a href="https://www.deviantart.com">
+			<img src="images/deviantart.svg" alt="deviantart" width="48" height="48">
+		</a>
+		<a href="https://www.youtube.com">
+			<img src="images/youtube.svg" alt="youtube" width="48" height="48">
+		</a>
+		</div>
+		<h3>Сайт разработан ФИ, Copyright © 2023</h3>
+	</footer>
+</body>
+</html>

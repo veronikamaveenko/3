@@ -1,0 +1,213 @@
+@font-face {
+	font-family: "aFuturaRound"; 
+	src: local("a_FuturaRound"),
+		url(fonts/afuturaround.ttf); 
+}
+@font-face {
+	font-family: "CeraPro"; 
+	src: local("Cera Pro Black"),
+		url(fonts/CeraPro-Black.ttf); 
+}
+
+body
+{
+	min-height: 100vh;
+	position: relative;
+	margin: 0;
+	padding: 0;
+	background: linear-gradient(0deg, #f9d8df 0%, #fef3ef 100%);
+}
+header, footer
+{
+	margin: 0;
+	padding: 0;
+	background-color: #fef8f8;
+}
+header
+{
+	border-bottom: 6px solid #e3758c47;
+}
+footer
+{
+	border-top: 6px solid #e3758c63;
+	display: flex;
+	height: 100%;
+	margin-bottom: 0;
+}
+.index, .info, .example, .applointment
+{
+	box-shadow: 7px 7px 0px -1px #e3758c47;
+}
+header
+{
+	height: 140px;
+	font-size: 20px;
+}
+header img
+{
+	display: flex;
+}
+.logo
+{
+	width: fit-content;
+	padding-top: 20px;
+	padding-left: 20px;
+}
+header ul
+{
+	display: flex;
+	justify-content: space-around;
+	list-style-type: none;
+}
+.icons, footer h3
+{
+	margin: auto;
+	padding: clamp(0px, 1%, 2%);
+}
+.icons
+{
+	margin-left: 0;
+}
+footer h3
+{
+	padding-right: 14px;
+	margin-right: 0;
+}
+a, h1, h2, h3, .info, .applointment
+{
+	color: #663132;
+	text-decoration: none;
+	overflow: hidden;
+}
+h2, #button
+{
+	font-family: "Comic Sans MS";
+}
+a, h1, h3
+{
+	font-family: "CeraPro";
+	font-weight: normal;
+}
+ul a:hover, main a:hover
+{
+    border-bottom: 3px dashed #663132;
+}
+main
+{
+	margin: auto;
+	padding-left: clamp(0px, 7%, 14%);
+	padding-right: clamp(0px, 7%, 14%);
+	padding-bottom: clamp(0px, 7%, 14%);
+	padding-top: clamp(0px, 3%, 6%);
+}
+.index, .info, .example, .applointment
+{
+	padding: clamp(0px, 4%, 8%);
+	background-color: #ffffff;
+	display: flex;
+}
+.index img
+{
+	border-radius: 50%;
+	border: 3px dashed #663132;
+}
+.index h1, .example h1
+{
+	padding: 10px;
+}
+.index h2, .example h2
+{
+	padding: 2px 10px;
+}
+h2
+{
+	font-size: 16px;
+}
+h1
+{
+	font-size: 22px;
+}
+.info
+{
+	flex-direction: column;
+    align-items: center;
+	table-layout: fixed;
+}
+.info th
+{
+	font-weight: bold;
+	padding: 5px;
+	background: #98d498;
+}
+.info td
+{
+	padding: 5px 10px;
+	text-align: left;
+}
+.info tbody tr:nth-child(odd)
+{
+	background: #daf2ca;
+}
+.info tbody tr:nth-child(even)
+{
+	background: #b3e0ac;
+}
+.info
+{
+	font-family: afuturaround;
+}
+.applointment, .log
+{
+	flex-direction: column;
+	padding-left: clamp(0px, 8%, 16%);
+	font-family: 'Roboto', sans-serif;
+}
+.applointment label
+{
+	font-size: 14px;
+}
+.name-and-log
+{
+	display: flex;
+}
+#user_id, #name, #crs, textarea
+{
+	border: 1px solid;
+	border-radius: 5px;
+	border-color: #e3758c;
+}
+#user_id, #name, #crs
+{
+	height: 25px;
+}
+#user_id, #name, textarea
+{
+	padding-left: 5px;
+}
+textarea
+{
+	height: 60px;
+	width: 100%;
+}
+#select-button
+{
+	display: flex;
+	justify-content: center;
+}
+#button
+{
+	border: 2px solid;
+	border-radius: 10px;
+	border-color: #e3758c;
+	color: #e3758c;
+	background-color: white;
+	height: 45px;
+	width: 100px;
+	font-weight: bold;
+}
+#button:hover
+{
+	border: 0;
+	color: white;
+	background-color: #e3758c;
+}
